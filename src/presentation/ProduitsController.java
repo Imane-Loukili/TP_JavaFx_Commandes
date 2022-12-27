@@ -1,4 +1,4 @@
-package presentation.controllers;
+package presentation;
 
 import dao.ProduitDao;
 import dao.ProduitDaoImpl;
@@ -31,21 +31,40 @@ public class ProduitsController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         produitService = new ProduitServiceImpl(new ProduitDaoImpl());
         listView.setItems(observableList);
-        observableList.addAll(produitService.getAllProduits());
-
+        loadProducts();
     }
     @FXML
     private void addProduit(){
         String nom = textNom.getText();
-        float prix = Float.valueOf(textPrix.getText().toString());
-        int qte = Integer.valueOf(textQte.getText().toString());
-        
+        float prix = Float.parseFloat(textPrix.getText());
+        int qte = Integer.parseInt(textQte.getText());
+
         if(nom.isEmpty()|| prix ==0 || qte == 0){
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setContentText("Veuillez saisir tous les champs");
             alert.show();
         }else{
-           // observableList.add()
+            Produit p =new Produit();
+            p.setNom(nom);p.setPrix(prix);p.setQte(qte);
+            produitService.addProduit(p);
+            loadProducts();
         }
+    }
+    @FXML
+    private void deleteProduit(){
+        Produit p=listView.getSelectionModel().getSelectedItem();
+        if(p!=null){
+            produitService.deleteProduit(p);
+            loadProducts();
+        }else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setContentText("Veuillez selectionner un element");
+            alert.show();
+        }
+
+    }
+    private void loadProducts(){
+        observableList.clear();
+        observableList.addAll(produitService.getAllProduits());
     }
 }

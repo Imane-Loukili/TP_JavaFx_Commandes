@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fa4f68d-7140-4b28-bdae-7af88c4e2133" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/ClientDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/ClientDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/CommandeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/CommandeDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/Dao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/ProduitDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/ProduitDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/entities/Commande.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dao/entities/Produit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/controllers/ClientsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/controllers/CommandesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation/controllers/ProduitsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ProduitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/ProduitServiceImpl.java" afterDir="false" />
+    <list default="true" id="7fa4f68d-7140-4b28-bdae-7af88c4e2133" name="Changes" comment="commit 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/metier/SignletonConnectionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/SingletonConnectionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/presentation/modeles/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ClientDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ClientDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/ClientDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/ClientDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CommandeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/CommandeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/entities/Produit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/entities/Produit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/ApplicationJavaFx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/ApplicationJavaFx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation/controllers/ProduitsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation/controllers/ProduitsController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672150261320</updated>
-      <workItem from="1672150263013" duration="8750000" />
+      <workItem from="1672150263013" duration="11621000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1672153723757</created>
@@ -92,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672155190226</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 2">
+      <created>1672169517411</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672169517411</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 2" />
   </component>
 </project>

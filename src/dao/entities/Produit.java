@@ -37,4 +37,14 @@ public class Produit {
     public void setQte(int qte) {
         this.qte = qte;
     }
+
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "ID=" + ID +
+                ", nom='" + nom + '\'' +
+                ", prix=" + prix +
+                ", qte=" + qte +
+                '}';
+    }
 }

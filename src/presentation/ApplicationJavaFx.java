@@ -12,7 +12,7 @@ public class ApplicationJavaFx extends Application {
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
-                BorderPane root= FXMLLoader.load(getClass().getResource("ProduitsLayout.fxml"));
+                BorderPane root= FXMLLoader.load(getClass().getResource("produitsLayout.fxml"));
                 Scene scene=new Scene(root,600,400);
                 primaryStage.setTitle("gestion de commandes");
                 primaryStage.setScene(scene);

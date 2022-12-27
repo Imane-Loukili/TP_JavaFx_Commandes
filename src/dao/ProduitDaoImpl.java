@@ -41,6 +41,19 @@ public class ProduitDaoImpl implements ProduitDao {
 
     @Override
     public Produit save(Produit o) {
+
+        Connection conn=SingletonConnectionDB.getConnection();
+        try {
+            PreparedStatement pstm=conn.prepareStatement("insert into t_produits(nom,prix,quantite) " +
+                    "values (?,?,?)");
+            pstm.setString(1,o.getNom());
+            pstm.setFloat(2,o.getPrix());
+            pstm.setInt(3,o.getQte());
+            pstm.executeUpdate();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
         return null;
     }
 
